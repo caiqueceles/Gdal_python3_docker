@@ -3,15 +3,21 @@
 Docker is an app that controls the process in containers
 This manual aims to use this container with the main tools.
 
+link para docker with R
+https://colinfay.me/docker-r-reproducibility/
+https://towardsdatascience.com/reproducible-work-in-r-e7d160d5d198
+
+
+
 ## pre - requisite
     
 vscode installation:
 docker installation:
 
 to download the folder: click here
-unpack the folder.
+https://github.com/caiqueceles/Gdal_python3_docker.git
 
-The gdal_python3_docker folder of the unzipped archive contains all the files needed to run python 3 and jupyter.
+The gdal_python3_docker folder contains all the files needed to run python 3 and jupyter.
 
 
 the folder content:
@@ -50,6 +56,17 @@ python script/py_point_to_MDS_filter.py
 Check image in the output
 
 
+##  Start jupyter: copy this link in the browser
+http://127.0.0.1:8008/?token=55823d0ba2d38a542305271c1fb68bfccdef227680059b62
+
+
+### to connect vscode to jupyter
+Command Palette (Ctrl+Shift+P)
+jupyter: Specify local or remote jupyter server for connections
+And copy link above
+and reload the vscode
+
+
 ## Debug (optional)
 Once the container is running, run inside the container (in /app) the command:
 ./debug.sh NOMESCRIPT.py
@@ -61,28 +78,34 @@ Once the container is running, run inside the container (in /app) the command:
 After click in the debug icon, run the debug scrip (play icon)
 
 
-## To install a library, open a terminal (out of container process)
+## To install a library, open a terminal (out of container process) (optional)
+Go to terminal tab > new terminal
+
 In the project directory, execute:
 ./install.sh LIBRARYNAME
 
 ```
-./install.sh LIBRARYNAME
+./install.sh pandas
 ```
 
-## After install new libraries
-or after installing many libraries, to save the packages in the image, for the container to start faster (no need to install every time it starts), run:
+## After install new libraries (recommended)
+
+After installing one or many new libraries, it is needed to build the image again
+For this it is needed to stop the container process and build the image again
+
 In the project directory, execute:
+
+```
+docker-compose down
+```
 
 ```
 docker-compose build
 ```
 
-##  Start jupyter in browser
-http://127.0.0.1:8008/?token=55823d0ba2d38a542305271c1fb68bfccdef227680059b62
+```
+./up.sh
+```
 
 
-### to connect vscode to jupyter
-Command Palette (Ctrl+Shift+P)
-jupyter: Specify local or remote jupyter server for connections
-And copy link above
 
