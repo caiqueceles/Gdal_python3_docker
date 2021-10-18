@@ -1,0 +1,35 @@
+{
+    "configurations": [ 
+        {
+            "name": "Debug script",
+            "type": "python",
+            "request": "attach",
+            "port": 3001,
+            "debugServer": 3001,
+            "host": "localhost",
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}/src",
+                    "remoteRoot": "/app",
+                }
+            ],
+            "logToFile": true
+        },  
+        {
+            "name": "Run main _csv2sql.py",
+            "type": "python",
+            "request": "attach",
+            "port": 3001,
+            "debugServer": 3001,
+            "host": "localhost",
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}/src",
+                    "remoteRoot": "/app",
+                }
+            ],
+            "logToFile": true
+        },  
+
+    ]
+}

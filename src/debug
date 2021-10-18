@@ -1,0 +1,4 @@
+echo "DEBUGANDO O SCRIPT $@"
+echo "INICIO O DEBUGGER NO VSCODE"
+
+python /tmp/debugpy --listen 0.0.0.0:3001 --wait-for-client "$@"
