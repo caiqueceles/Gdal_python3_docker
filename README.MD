@@ -3,6 +3,10 @@
 Docker is an app that controls the process in containers
 This manual aims to use this container with the main tools.
 
+contact for any help: Carlos Celes  
+carlosceles@yahoo.com.br
+
+
 link para docker with R
 https://colinfay.me/docker-r-reproducibility/
 https://towardsdatascience.com/reproducible-work-in-r-e7d160d5d198
