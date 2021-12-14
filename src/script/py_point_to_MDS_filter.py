@@ -117,7 +117,7 @@ MDF=MD_filter( MDmax, 5 , 5)
 
 f = plt.figure()
 plt.imshow(MDF, cmap=plt.cm.gray, interpolation='nearest' )
-plt.title('Modelo Digitais da superficie')
+plt.title('MDS')
 plt.xlabel('E UTM (m)')
 plt.ylabel('N UTM (m)')
 plt.show()

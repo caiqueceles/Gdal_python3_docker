@@ -92,6 +92,7 @@ In the project directory, execute:
 ./install.sh pandas
 ```
 
+
 ## After install new libraries (recommended)
 
 After installing one or many new libraries, it is needed to build the image again

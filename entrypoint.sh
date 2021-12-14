@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-MSG=" ********** iniciando container do python caique "
+MSG=" ********** iniciando container do python jupyter "
 echo MSG
 
 pip install -r /requirements.txt
